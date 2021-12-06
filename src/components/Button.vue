@@ -1,5 +1,5 @@
 <template>
-  <button type="submit" class="button" @click="getDataFromApi">Go</button>
+  <button type="submit" class="button" @click="triggerModal">Go</button>
 </template>
 <script>
 export default {
@@ -7,12 +7,7 @@ export default {
   methods: {
     triggerModal() {
       this.$emit('open')
-    },
-    getDataFromApi() {
-      fetch("https://pokeapi.co/api/v2/pokemon?limit=50")
-      .then(response => response.json())
-      .then(data => data)
-    },
+    }
   }
 }
 </script>

@@ -32,6 +32,6 @@ export default {
       #019FF9, #054D75
     );
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 </style>
